@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sports lhb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo-site">
+    <img src="images/logo.png.png" alt="Sports LHB">
+</div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Hommes</a>
+        <a href="#">Femmes</a>
+        <a href="#">Football</a>
+        <a href="#">Fitness</a>
+        <a href="contact.html">Contact</a>
+        <button onclick="darkMode()">🌙</button>
+        <a href="login.html">Connexion</a>
+        <a href="favoris.html">❤️ Favoris</a>
+        <a href="admin-login.html">⚙️ Admin</a>
+    </nav>
+
+    <button id="panier" onclick="window.location.href='cart.html'">
+        🛒 Panier : 0
+    </button>
+</header>
+
+<section class="hero">
+    <h2>Bienvenue chez sports lhb</h2>
+    <p>Votre destination pour les meilleurs équipements sportifs au Maroc</p>
+
+    <a href="#produits" class="hero-btn">
+        Découvrir nos produits
+    </a>
+</section>
+
+<section class="intro">
+    <h2>Marketplace du Sport au Maroc</h2>
+    <p>Achetez et vendez des vêtements et équipements sportifs.</p>
+</section>
+
+<section class="search-box">
+    <input type="text" id="recherche" placeholder="Rechercher un produit...">
+
+    <button onclick="rechercherProduit()">
+        🔍 Rechercher
+    </button>
+</section>
+
+<section class="categories">
+    <h2>Nos Catégories</h2>
+
+    <div class="cat-container">
+        <div class="cat-card">⚽ Football</div>
+        <div class="cat-card">🏃 Running</div>
+        <div class="cat-card">🏋️ Fitness</div>
+        <div class="cat-card">🏀 Basketball</div>
+    </div>
+</section>
+
+<section class="products" id="produits">
+    <h2>Nos Produits</h2>
+
+    <div class="product-container">
+
+        <div class="product">
+            <img src="images/maillot.jpg.avif">
+            <h3>Maillot Football</h3>
+            <p>299 DH</p>
+<p class="note">⭐⭐⭐⭐⭐</p>
+            <button onclick="ajouterPanier('Maillot Football',299)">Acheter</button>
+            <button onclick="ajouterFavori('Maillot Football')">❤️ Favori</button>
+            <button onclick="noterProduit('Maillot Football')">
+⭐ Noter
+</button>
+
+            <button onclick="voirDetails('Maillot Football', 299, 'images/maillot.jpg.avif', 'Maillot confortable pour les matchs et les entraînements.')" class="details-btn">Voir Détails</button>
+        </div>
+
+        <div class="product">
+            <img src="images/chaussures.jpg.webp">
+            <h3>Chaussures Running</h3>
+            <p>799 DH</p>
+<p class="note">⭐⭐⭐⭐⭐</p>
+            <button onclick="ajouterPanier('Chaussures Running',799)">Acheter</button>
+            <button onclick="ajouterFavori('Chaussures Running')">❤️ Favori</button>
+            <button onclick="noterProduit('Chaussures Running')">
+⭐ Noter
+</button>
+
+            <button onclick="voirDetails('Chaussures Running', 799, 'images/chaussures.jpg.webp', 'Chaussures légères adaptées à la course et au fitness.')" class="details-btn">Voir Détails</button>
+        </div>
+
+        <div class="product">
+            <img src="images/ballon.jpg.webp">
+            <h3>Ballon Adidas</h3>
+            <p>199 DH</p>
+<p class="note">⭐⭐⭐⭐⭐</p>
+            <button onclick="ajouterPanier('Ballon Adidas',199)">Acheter</button>
+            <button onclick="ajouterFavori('Ballon Adidas')">❤️ Favori</button>
+            <button onclick="noterProduit('Ballon Adidas')">
+⭐ Noter
+</button>
+
+            <button onclick="voirDetails('Ballon Adidas', 199, 'images/ballon.jpg.webp', 'Ballon résistant idéal pour le football.')" class="details-btn">Voir Détails</button>
+        </div>
+
+        <div class="product">
+            <img src="images/survetement.jpg.webp">
+            <h3>Survêtement Nike</h3>
+            <p>399 DH</p>
+<p class="note">⭐⭐⭐⭐⭐</p>
+            <button onclick="ajouterPanier('Survêtement Nike',399)">Acheter</button>
+            <button onclick="ajouterFavori('Survêtement Nike')">❤️ Favori</button>
+            <button onclick="noterProduit('Survêtement Nike')">
+⭐ Noter
+</button>
+
+            <button onclick="voirDetails('Survêtement Nike', 399, 'images/survetement.jpg.webp', 'Survêtement sportif confortable et moderne.')" class="details-btn">Voir Détails</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h3>sports lhb</h3>
+    <p>📞 Téléphone : 06 00 00 00 00</p>
+    <p>📧 Email : mrsports@gmail.com</p>
+    <p>📍 Maroc</p>
+    <p>© 2026 sports lhb - Tous droits réservés</p>
+</footer>
+
+<a href="https://wa.me/212600000000" class="whatsapp-btn" target="_blank">
+    💬
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

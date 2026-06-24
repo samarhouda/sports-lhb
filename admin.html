@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin sports lhb</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>⚙️ Dashboard Admin</h1>
+</header>
+<a href="index.html" class="btn-retour">
+    ⬅ Retour à l'accueil
+</a>
+
+<section class="commande">
+<div class="stats">
+
+    <div class="stat-card">
+        📦 Produits : <span id="totalProduits">0</span>
+    </div>
+
+    <div class="stat-card">
+        🛒 Commandes : <span id="totalCommandes">0</span>
+    </div>
+
+    <div class="stat-card">
+        ❤️ Favoris : <span id="totalFavoris">0</span>
+    </div>
+
+    <div class="stat-card">
+        💰 Revenus : <span id="totalRevenus">0</span> DH
+    </div>
+
+    <div class="stat-card">
+        Produits vendus : <span id="totalProduitsVendus">0</span>
+    </div>
+
+    <div class="stat-card">
+        Clients : <span id="totalClients">0</span>
+    </div>
+
+    <div class="stat-card stat-card-large">
+        Top produit : <span id="topProduitVendu">Aucun</span>
+    </div>
+
+</div>
+    <h2>Ajouter un produit</h2>
+
+    <input type="text" id="nomProduit" placeholder="Nom du produit">
+
+    <input type="file" id="imageProduit" accept="image/*">
+
+    <input type="number" id="prixProduit" placeholder="Prix">
+    <input type="number" id="ancienPrixProduit" placeholder="Ancien prix ex: 399">
+
+<textarea id="descriptionProduit" placeholder="Description du produit"></textarea>
+
+    <button onclick="ajouterProduitAdmin()">
+        Ajouter Produit
+    </button>
+
+    <div id="listeProduitsAdmin"></div>
+
+    <hr>
+
+    <h2>📦 Commandes clients</h2>
+
+    <div id="listeCommandes"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

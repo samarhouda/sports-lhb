@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - sports lhb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛒 Mon Panier</h1>
+</header>
+
+<section class="panier-page">
+    <h2>Produits sélectionnés</h2>
+
+    <div id="liste-panier"></div>
+
+    <h3 id="total">Total : 0 DH</h3>
+
+    <a href="commande.html">
+        <button class="commander">Commander</button>
+    </a>
+
+    <button onclick="ouvrirWhatsAppPanier()" class="whatsapp-panier">
+        Commander via WhatsApp
+    </button>
+
+    <br><br>
+
+    <button onclick="viderPanier()" class="commander">
+        Vider le panier
+    </button>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
